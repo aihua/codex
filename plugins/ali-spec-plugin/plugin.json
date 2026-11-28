@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ali-spec-plugin",
+  "version": "1.0.0",
+  "description": "阿里巴巴编码规约技能集：Java 手册与前端规约（11 规约技能 + 11 评审技能 + 2 共享参考）",
+  "keywords": [
+    "alibaba",
+    "coding-standard",
+    "java",
+    "mysql",
+    "frontend",
+    "codex"
+  ]
+}
