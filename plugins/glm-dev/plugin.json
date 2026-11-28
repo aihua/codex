@@ -1,0 +1,52 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "glm-dev",
+  "version": "1.0.0",
+  "description": "Development workflow plugin bundling two skills: glm-coding-agent (coding workflow discipline covering planning, implementation, verification and testing) and glm-fullstack-dev (Next.js 16 full-stack web development with TypeScript, Tailwind CSS and Prisma). Trigger for structured coding tasks and full-stack application builds; the discipline skill routes implementation work to the fullstack skill.",
+  "author": {
+    "name": "Z.ai",
+    "url": "https://z.ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "coding",
+    "workflow",
+    "planning",
+    "verification",
+    "memory",
+    "local-first",
+    "fullstack",
+    "nextjs",
+    "typescript",
+    "tailwind",
+    "shadcn",
+    "prisma",
+    "socketio",
+    "ollama"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GLM Dev Workflow",
+        "shortDescription": "Two development skills: the coding workflow discipline and the Next.js 16 full-stack build skill.",
+        "longDescription": "GLM Dev Workflow bundles the coding discipline and the full-stack build skill. glm-coding-agent enforces the structured coding workflow — planning, implementation, verification and testing — and routes concrete implementation work to glm-fullstack-dev, which builds Next.js 16 applications with TypeScript, Tailwind CSS 4, shadcn/ui and Prisma ORM, including database schemas, API routes and WebSocket support. The discipline skill governs when to plan, when to implement and how to verify; the fullstack skill owns the build details. Deliver projects under the user's workspace.",
+        "developerName": "Z.ai",
+        "category": "Developer Tools",
+        "capabilities": [
+          "planning",
+          "execution-guidance",
+          "verification",
+          "state-tracking",
+          "preference-memory",
+          "scaffolding",
+          "ui-rules",
+          "api-routes",
+          "database-schema",
+          "websocket-support",
+          "self-verification"
+        ],
+        "defaultPrompt": "Use the glm-dev plugin skills: <结构化编码任务 / Next.js 全栈应用开发>"
+      }
+    }
+  }
+}

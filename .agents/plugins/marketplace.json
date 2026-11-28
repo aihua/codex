@@ -1,0 +1,176 @@
+{
+  "name": "ai-marketplace",
+  "interface": {
+    "displayName": "AI Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "glm-academic",
+      "source": {
+        "source": "local",
+        "path": "./plugins/glm-academic"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "GLM"
+    },
+    {
+      "name": "glm-agent-ops",
+      "source": {
+        "source": "local",
+        "path": "./plugins/glm-agent-ops"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "GLM"
+    },
+    {
+      "name": "glm-career",
+      "source": {
+        "source": "local",
+        "path": "./plugins/glm-career"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "GLM"
+    },
+    {
+      "name": "glm-chart",
+      "source": {
+        "source": "local",
+        "path": "./plugins/glm-chart"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "GLM"
+    },
+    {
+      "name": "glm-content",
+      "source": {
+        "source": "local",
+        "path": "./plugins/glm-content"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "GLM"
+    },
+    {
+      "name": "glm-design",
+      "source": {
+        "source": "local",
+        "path": "./plugins/glm-design"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "GLM"
+    },
+    {
+      "name": "glm-dev",
+      "source": {
+        "source": "local",
+        "path": "./plugins/glm-dev"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "GLM"
+    },
+    {
+      "name": "glm-finance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/glm-finance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "GLM"
+    },
+    {
+      "name": "glm-gaokao",
+      "source": {
+        "source": "local",
+        "path": "./plugins/glm-gaokao"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "GLM"
+    },
+    {
+      "name": "glm-image",
+      "source": {
+        "source": "local",
+        "path": "./plugins/glm-image"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "GLM"
+    },
+    {
+      "name": "glm-market",
+      "source": {
+        "source": "local",
+        "path": "./plugins/glm-market"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "GLM"
+    },
+    {
+      "name": "glm-multimodal",
+      "source": {
+        "source": "local",
+        "path": "./plugins/glm-multimodal"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "GLM"
+    },
+    {
+      "name": "glm-study",
+      "source": {
+        "source": "local",
+        "path": "./plugins/glm-study"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "GLM"
+    },
+    {
+      "name": "glm-web",
+      "source": {
+        "source": "local",
+        "path": "./plugins/glm-web"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "GLM"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "glm-web",
+  "version": "1.0.0",
+  "description": "Web research and content acquisition plugin bundling five skills: glm-web-search (zero-dependency local web search CLI), glm-web-reader (webpage main-content extraction CLI), glm-multi-search-engine (aggregation of eight Chinese search engines with advanced operators), glm-agent-browser (headless browser automation for navigation, clicks and snapshots) and glm-contentanalysis (unified content extraction and insight routing). Trigger for any web search, page reading, browser automation or content analysis task. This plugin is the common foundation referenced by 20+ other GLM skills — install it first.",
+  "author": {
+    "name": "Z.ai",
+    "url": "https://z.ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "web-search",
+    "search",
+    "web",
+    "bing",
+    "duckduckgo",
+    "fetch",
+    "research",
+    "retrieval",
+    "news",
+    "zero-dependency",
+    "web-reader",
+    "page-reader",
+    "reader",
+    "extract",
+    "content-extraction",
+    "rss",
+    "scraping",
+    "search-engine",
+    "cn-search",
+    "wechat-articles",
+    "toutiao",
+    "jisilu",
+    "keyless",
+    "local-first",
+    "browser-automation",
+    "headless",
+    "playwright",
+    "web-scraping",
+    "form-filling",
+    "ui-testing",
+    "pnpm",
+    "content-analysis",
+    "wisdom-extraction",
+    "youtube-transcript",
+    "insight-report"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GLM Web Research",
+        "shortDescription": "Web research foundation: search, page reading, multi-engine aggregation, headless browsing and content analysis.",
+        "longDescription": "GLM Web Research is the common foundation for the whole GLM skill family: more than 20 other skills reference its CLIs. glm-web-search runs a zero-dependency search over public engines (glmws.py), glm-web-reader extracts main content from any URL (glmwr.py), glm-multi-search-engine aggregates eight Chinese search engines with advanced operators (mse.py), glm-agent-browser drives a headless browser for navigation, clicks and snapshots, and glm-contentanalysis routes videos, podcasts and articles into tailored wisdom extraction. All scripts are pure standard-library; install this plugin first and other GLM skills can call its CLIs directly.",
+        "developerName": "Z.ai",
+        "category": "Productivity",
+        "capabilities": [
+          "web-search",
+          "research",
+          "page-fetch",
+          "page-read",
+          "content-extraction",
+          "rss",
+          "cn-engine-search",
+          "wechat-article-search",
+          "toutiao-aggregation",
+          "jisilu-financial-data",
+          "url-plain-text-fetch",
+          "browser-automation",
+          "structured-extraction",
+          "form-filling",
+          "ui-testing",
+          "screenshots",
+          "wisdom-extraction",
+          "dynamic-sections",
+          "depth-levels",
+          "youtube-transcripts"
+        ],
+        "defaultPrompt": "Use the glm-web plugin skills: <搜索网页 / 读取网页正文 / 多引擎检索 / 无头浏览器 / 内容萃取>"
+      }
+    }
+  },
+  "skills": "./skills/"
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "glm-image",
+  "version": "1.0.0",
+  "description": "Image workflow plugin bundling four skills: glm-image-generation (local deterministic programmatic image generation), glm-image-edit (deterministic image editing), glm-image-search (local image search) and glm-image-understand (static image understanding). Trigger for generating, editing, finding or analyzing images without cloud services. The four skills interoperate as a complete image workflow.",
+  "author": {
+    "name": "Z.ai",
+    "url": "https://z.ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "image-generation",
+    "procedural",
+    "pillow",
+    "poster",
+    "banner",
+    "avatar",
+    "uv",
+    "local-first",
+    "image-editing",
+    "deterministic",
+    "resize",
+    "watermark",
+    "image-search",
+    "bing-images",
+    "stock-photos",
+    "moodboard",
+    "keyless",
+    "zero-dependency",
+    "image-understanding",
+    "ocr",
+    "image-classification",
+    "alt-text",
+    "object-detection",
+    "ollama"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GLM Image Toolkit",
+        "shortDescription": "Four local image skills: deterministic generation, editing, search and static understanding.",
+        "longDescription": "GLM Image Toolkit is a closed image workflow without cloud services. glm-image-generation draws deterministic programmatic images (SVG to PNG, shapes, badges, layouts), glm-image-edit applies deterministic edits (resize, crop, compose, annotate), glm-image-search finds local files or searches the web for real photo material, and glm-image-understand analyzes static images with local vision models. The four skills route between each other (generate, edit, find, understand) and interoperate with the multimodal adapters when vision models are needed. Zero API keys; outputs land in the user's output directory.",
+        "developerName": "Z.ai",
+        "category": "Productivity",
+        "capabilities": [
+          "image-generation",
+          "poster-design",
+          "hero-banners",
+          "letter-avatars",
+          "card-covers",
+          "image-editing",
+          "resize-and-crop",
+          "watermark",
+          "compositing",
+          "format-conversion",
+          "image-search",
+          "asset-gathering",
+          "moodboards",
+          "illustration-research",
+          "ocr",
+          "image-classification",
+          "alt-text-generation",
+          "object-detection",
+          "quality-assessment",
+          "multi-image-diff"
+        ],
+        "defaultPrompt": "Use the glm-image plugin skills: <程序化生成图片 / 编辑图片 / 找图 / 理解图片内容>"
+      }
+    }
+  }
+}

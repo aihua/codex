@@ -1,0 +1,69 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "glm-multimodal",
+  "version": "1.0.0",
+  "description": "Local model capability plugin bundling four adapter skills: glm-llm (chat completions), glm-vlm (vision chat), glm-asr (speech-to-text) and glm-tts (text-to-speech, macOS). Each replaces the original z-ai-web-dev-sdk calls with local Ollama equivalents. Trigger for any text generation, image understanding, transcription or speech synthesis request running against local models. Requires a running local Ollama instance.",
+  "author": {
+    "name": "Z.ai",
+    "url": "https://z.ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "llm",
+    "chat-completions",
+    "ollama",
+    "local-first",
+    "conversation",
+    "streaming",
+    "zero-dependency",
+    "vision",
+    "vlm",
+    "multimodal",
+    "image-analysis",
+    "asr",
+    "speech-to-text",
+    "whisper",
+    "faster-whisper",
+    "transcription",
+    "uv",
+    "tts",
+    "text-to-speech",
+    "say",
+    "afconvert",
+    "macos",
+    "audio"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GLM Multimodal",
+        "shortDescription": "Four model adapters — chat, vision, ASR and TTS — against a local Ollama instance.",
+        "longDescription": "GLM Multimodal bundles the four model-capability adapters for locally deployed Codex agents: glm-llm (chat completions), glm-vlm (vision chat), glm-asr (speech-to-text) and glm-tts (text-to-speech, macOS voices). Every original z-ai-web-dev-sdk call is replaced by its local Ollama equivalent, so the same workflows run with zero vendor gateway credentials. Routing between the four adapters is built in (text generation, image understanding, transcription, synthesis). Requires a running local Ollama instance; model names can be pinned through environment variables.",
+        "developerName": "Z.ai",
+        "category": "Productivity",
+        "capabilities": [
+          "chat-completions",
+          "multi-turn-conversations",
+          "thinking-mode",
+          "streaming",
+          "local-llm",
+          "vision-chat",
+          "image-analysis",
+          "multi-image-comparison",
+          "multi-turn-vision",
+          "speech-to-text",
+          "transcription",
+          "local-whisper",
+          "multi-format-audio",
+          "text-to-speech",
+          "audio-file-generation",
+          "voice-selection",
+          "speed-control",
+          "macos-native"
+        ],
+        "defaultPrompt": "Use the glm-multimodal plugin skills: <本地模型对话 / 看图说话 / 语音转文字 / 文字转语音>"
+      }
+    }
+  },
+  "skills": "./skills/"
+}

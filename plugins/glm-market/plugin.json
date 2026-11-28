@@ -1,0 +1,63 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "glm-market",
+  "version": "1.0.0",
+  "description": "Marketing and market research plugin bundling three strategy skills: glm-content-strategy (an eight-step solopreneur content marketing system covering goals, audience research, pillars, calendar, distribution, repurposing and metrics), glm-marketing-mode (a marketing knowledge base covering 23 domains) and glm-market-research-reports (consulting-grade market research reports of 50+ pages). Trigger for content marketing planning, marketing method lookup and market report generation. Zero SDK, zero network; deliverables land in the user's output directory.",
+  "author": {
+    "name": "Z.ai",
+    "url": "https://z.ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "content-strategy",
+    "content-marketing",
+    "content-calendar",
+    "repurposing",
+    "solopreneur",
+    "local-first",
+    "marketing",
+    "growth",
+    "copywriting",
+    "seo",
+    "cro",
+    "paid-ads",
+    "market-research",
+    "consulting-reports",
+    "latex",
+    "strategy-frameworks",
+    "porter-five-forces",
+    "pestle",
+    "tam-sam-som",
+    "matplotlib-visuals"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GLM Marketing",
+        "shortDescription": "Three marketing skills: the eight-step content strategy system, a 23-domain knowledge base and 50+ page market research reports.",
+        "longDescription": "GLM Marketing bundles three strategy skills. glm-content-strategy runs the eight-step solopreneur content marketing system — goals, audience research, content pillars, calendar, distribution, repurposing and metrics — producing a complete strategy pack. glm-marketing-mode is a marketing knowledge base covering 23 domains (strategy, psychology, copywriting frameworks, SEO, conversion optimization, paid growth) with audit checklists and discovery questionnaires. glm-market-research-reports generates consulting-grade market research reports of 50+ pages from structured outlines. Zero SDK, zero network; deliverables land in the user's output directory.",
+        "developerName": "Z.ai",
+        "category": "Marketing",
+        "capabilities": [
+          "strategy-building",
+          "content-calendar",
+          "distribution-planning",
+          "repurposing-workflows",
+          "metrics",
+          "marketing-strategy",
+          "copywriting-frameworks",
+          "seo-audit",
+          "conversion-optimization",
+          "paid-growth",
+          "marketing-persona",
+          "market-research-reports",
+          "strategy-frameworks",
+          "latex-publishing",
+          "visual-generation",
+          "competitive-analysis"
+        ],
+        "defaultPrompt": "Use the glm-market plugin skills: <内容营销策略 / 营销模式知识库 / 市场研究报告>"
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "glm-gaokao",
+  "version": "1.0.0",
+  "description": "Gaokao volunteer recommendation pipeline plugin bundling five sequential skills: glm-gaokao-collect-student-info (step 1, student profile collection into student.json), glm-gaokao-fetch-volunteers (step 2, chong-wen-bao volunteer table via public APIs), glm-gaokao-recommend-majors (step 3, major direction and employment analysis), glm-gaokao-recommend-schools (step 4, school recommendation with personalized reasons) and glm-gaokao-generate-report (step 5, merged HTML report). Trigger for end-to-end gaokao volunteer planning; one install covers the complete pipeline.",
+  "author": {
+    "name": "Z.ai",
+    "url": "https://z.ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "gaokao",
+    "college-application",
+    "student-intake",
+    "province-mode-validation",
+    "structured-json",
+    "local-first",
+    "volunteer-table",
+    "chong-wen-bao",
+    "batch-resolution",
+    "api-client",
+    "keyless",
+    "major-recommendation",
+    "career-direction",
+    "consistency-checking",
+    "school-recommendation",
+    "chong-wen-bao-layout",
+    "html-report",
+    "jinja2-templates",
+    "offline-rendering"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GLM Gaokao Advisor",
+        "shortDescription": "Five-step gaokao volunteer pipeline in one plugin: student intake, chong-wen-bao volunteer table, major and school recommendations, offline HTML report.",
+        "longDescription": "GLM Gaokao Advisor bundles the five-step gaokao volunteer-filling pipeline for locally deployed Codex agents. Step 1 glm-gaokao-collect-student-info interviews the student and outputs a validated student.json (province/score/subjects preserved verbatim). Step 2 glm-gaokao-fetch-volunteers resolves batches and fetches the chong-wen-bao volunteer table through keyless public APIs. Step 3 glm-gaokao-recommend-majors derives major directions and concrete majors with employment analysis. Step 4 glm-gaokao-recommend-schools recommends 6-12 schools with personalized rationales in a chong-wen-bao layout. Step 5 glm-gaokao-generate-report merges the pipeline JSONs and renders the final HTML report offline. Skills interoperate through shared JSON artifacts in the user's output directory. Zero SDK, zero API key; only step 2 touches the network (public volunteer APIs).",
+        "developerName": "Z.ai",
+        "category": "Education",
+        "capabilities": [
+          "student-intake",
+          "province-mode-validation",
+          "volunteer-table-fetching",
+          "major-direction-analysis",
+          "school-recommendation",
+          "chong-wen-bao-layout",
+          "hard-constraint-validation",
+          "report-merging",
+          "html-rendering",
+          "offline-generation"
+        ],
+        "defaultPrompt": "Use the glm-gaokao plugin skills: <高考志愿咨询 / 获取冲稳保志愿表 / 推荐专业与院校 / 生成志愿填报报告>"
+      }
+    }
+  },
+  "skills": "./skills/"
+}

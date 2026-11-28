@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "glm-finance",
+  "version": "1.0.0",
+  "description": "Finance plugin bundling two skills: glm-finance (financial data and comprehensive analysis covering quotes, news and earnings) and glm-stock-analysis-skill (individual stock decision dashboards, dividend scoring and watch-list management). Trigger for market data queries, stock analysis and portfolio tracking.",
+  "author": {
+    "name": "Z.ai",
+    "url": "https://z.ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "finance",
+    "stock-quotes",
+    "historical-data",
+    "market-news",
+    "financial-statements",
+    "keyless",
+    "local-first",
+    "stock-analysis",
+    "decision-dashboard",
+    "dividend-scoring",
+    "rumor-scan",
+    "watchlist",
+    "position-aware"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GLM Finance",
+        "shortDescription": "Two finance skills: market data and comprehensive analysis, plus stock decision dashboards and watch-lists.",
+        "longDescription": "GLM Finance bundles two investment-analysis skills. glm-finance queries market data (quotes, news, earnings) through public endpoints and produces comprehensive analysis; glm-stock-analysis-skill builds individual stock decision dashboards with dividend scoring and watch-list management. Market charts route to the glm-chart plugin's glmcharts skill, and news search routes to the glm-web plugin's skills. Public endpoints, zero API keys; analysis reports land in the user's output directory.",
+        "developerName": "Z.ai",
+        "category": "Finance",
+        "capabilities": [
+          "real-time-quotes",
+          "historical-klines",
+          "market-news",
+          "financial-statements",
+          "provider-fallback",
+          "stock-decision-dashboard",
+          "position-aware-analysis",
+          "dividend-safety-scoring",
+          "rumor-impact-scanning",
+          "watchlist-alerts"
+        ],
+        "defaultPrompt": "Use the glm-finance plugin skills: <查行情与财务数据 / 个股决策看板 / 股息评分 / 自选股管理>"
+      }
+    }
+  }
+}

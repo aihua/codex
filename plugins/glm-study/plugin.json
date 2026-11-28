@@ -1,0 +1,68 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "glm-study",
+  "version": "1.0.0",
+  "description": "Study and assessment plugin bundling four skills: glm-study-buddy (long-term learning project supervision workflow), glm-quiz-mastery (quiz generation and mastery tracking), glm-quiz-html (turning question arrays into standalone web practice pages) and glm-cheat-sheet (converting study material into two-column condensed PDF knowledge cards). Trigger for study planning, exam preparation, practice page creation and knowledge summarization; the four skills form a closed learning loop.",
+  "author": {
+    "name": "Z.ai",
+    "url": "https://z.ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "study-buddy",
+    "learning-plan",
+    "spaced-learning",
+    "daily-quiz",
+    "progress-tracking",
+    "supervision",
+    "gamification",
+    "user-state-machine",
+    "local-first",
+    "quiz",
+    "mastery-tracking",
+    "spaced-repetition",
+    "ebbinghaus",
+    "k12",
+    "html",
+    "practice-page",
+    "self-contained",
+    "cheatsheet",
+    "study-notes",
+    "pdf-generation",
+    "reportlab"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GLM Study",
+        "shortDescription": "Four study skills: supervision, quiz mastery, web practice pages and condensed PDF cheat sheets.",
+        "longDescription": "GLM Study forms a closed learning loop. glm-study-buddy supervises long-term learning projects: it generates projects from the user's materials, schedules reviews and tracks progress with four iron rules (proactive search via the glm-web plugin's CLIs, quiz only after full completion, links/paths must be output, user gates never bypassed). glm-quiz-mastery generates questions from materials and tracks mastery; glm-quiz-html turns question arrays into standalone single-file HTML practice pages; glm-cheat-sheet converts study material into two-column condensed PDF knowledge cards. All data (projects, quizzes, journals) stays on the user's machine.",
+        "developerName": "Z.ai",
+        "category": "Education",
+        "capabilities": [
+          "learning-project-management",
+          "study-planning",
+          "daily-quiz-generation",
+          "progress-reporting",
+          "emotional-support",
+          "achievement-system",
+          "quiz-generation",
+          "question-import",
+          "answer-evaluation",
+          "mastery-tracking",
+          "ebbinghaus-review",
+          "quiz-page-generation",
+          "question-json-validation",
+          "category-filtering",
+          "exam-mode",
+          "error-notebook",
+          "material-condensing",
+          "three-style-output",
+          "pdf-rendering",
+          "text-extraction"
+        ],
+        "defaultPrompt": "Use the glm-study plugin skills: <督学项目 / 从资料出题 / 生成网页练习页 / 做一份速查卡>"
+      }
+    }
+  }
+}

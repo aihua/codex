@@ -1,0 +1,77 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "glm-career",
+  "version": "1.0.0",
+  "description": "Full-cycle job seeking plugin bundling five skills: glm-resume-builder (generate or optimize Chinese resumes with docx/pdf/md export), glm-jd-resume-tailor (JD decomposition and targeted resume rewriting with gap analysis), glm-interview-prep (candidate-side interview preparation with categorized question banks), glm-interview-designer (interviewer-side evidence-based structured interview design) and glm-job-intent-tracker (job intent sorting and application tracking). Trigger for resume writing, JD tailoring, interview preparation and application management, serving both candidates and interviewers.",
+  "author": {
+    "name": "Z.ai",
+    "url": "https://z.ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "resume",
+    "star-rewrite",
+    "ats-check",
+    "career",
+    "chinese-job-market",
+    "local-first",
+    "resume-tailoring",
+    "jd-analysis",
+    "gap-analysis",
+    "keyword-alignment",
+    "ats",
+    "job-hunting",
+    "interview",
+    "interview-prep",
+    "behavioral-interview",
+    "star-method",
+    "mock-interview",
+    "salary-negotiation",
+    "interview-design",
+    "structured-interview",
+    "topgrading",
+    "scorecard",
+    "hiring",
+    "recruiting",
+    "career-planning",
+    "application-tracker",
+    "kanban",
+    "target-profile",
+    "xlsx"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GLM Career",
+        "shortDescription": "Five career skills: resume building, JD tailoring, interview prep, interview design and application tracking.",
+        "longDescription": "GLM Career covers the full job-seeking cycle for both candidate and interviewer. glm-resume-builder generates or optimizes Chinese resumes with STAR rewrites, ATS keyword coverage checks and docx/pdf/md export. glm-jd-resume-tailor decomposes a target JD and rewrites the resume against it with a gap analysis. glm-interview-prep builds categorized question banks with reference answers and a printable prep handbook. glm-interview-designer works from the interviewer side: evidence-based structured interview design with scoring rubrics. glm-job-intent-tracker sorts job intents and tracks applications in a local journal. Exports land in the user's output directory; zero SDK, zero cloud calls.",
+        "developerName": "Z.ai",
+        "category": "Productivity",
+        "capabilities": [
+          "resume-generation",
+          "star-rewrite",
+          "ats-keyword-coverage",
+          "ats-friendliness-score",
+          "docx-pdf-md-export",
+          "jd-parsing",
+          "gap-analysis",
+          "resume-rewriting",
+          "ats-keyword-audit",
+          "interview-question-bank",
+          "star-story-matrix",
+          "reference-answer-drafting",
+          "salary-negotiation",
+          "interview-design",
+          "structured-interview",
+          "scorecard-definition",
+          "bias-control",
+          "job-intent-profiling",
+          "application-tracking",
+          "kanban-rendering"
+        ],
+        "defaultPrompt": "Use the glm-career plugin skills: <写简历 / 按 JD 改简历 / 准备面试 / 设计结构化面试 / 求职意向与投递追踪>"
+      }
+    }
+  },
+  "skills": "./skills/"
+}

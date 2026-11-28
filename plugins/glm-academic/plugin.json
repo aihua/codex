@@ -1,0 +1,72 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "glm-academic",
+  "version": "1.0.0",
+  "description": "Academic research plugin bundling six skills: aminer-academic-search (full AMiner access with 28 APIs for scholar profiles, paper deep dives, semantic search, institution analysis, venue monitoring and patent details), aminer-daily-paper (personalized paper digest via the AMiner rec5 API), aminer-deep-search (multi-round deep literature collection for surveys), aminer-free-academic (zero-cost lookups through seven free AMiner APIs), glm-literature-survey (6-20 page PDF surveys with 60+ real citations) and glm-research-explorer (turning fuzzy research directions into concrete topics). Trigger for literature retrieval, survey writing, paper recommendation and topic selection. The four AMiner skills require AMINER_API_KEY.",
+  "author": {
+    "name": "Z.ai",
+    "url": "https://z.ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "aminer",
+    "academic-search",
+    "scholar-profile",
+    "citation-analysis",
+    "patent-analysis",
+    "local-first",
+    "paper-recommendation",
+    "rec5",
+    "personalized",
+    "survey",
+    "bibliography",
+    "citation-snowballing",
+    "paper-collection",
+    "free-tier",
+    "paper-triage",
+    "entity-normalization",
+    "patent-trends",
+    "literature-survey",
+    "academic-writing",
+    "latex",
+    "taxonomy-figures",
+    "semantic-scholar",
+    "research",
+    "topic-exploration",
+    "literature-pre-survey"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GLM Academic",
+        "shortDescription": "Six academic skills: AMiner search/digest/deep-collection/free lookups, literature surveys and research topic exploration.",
+        "longDescription": "GLM Academic bundles the complete academic research stack for locally deployed Codex agents. Four AMiner skills cover the full API spectrum: aminer-academic-search (28 paid APIs for scholar profiles, paper deep dives, semantic search, institution and patent analysis), aminer-free-academic (7 free APIs for lightweight lookups and routing), aminer-daily-paper (rec5 personalized digests) and aminer-deep-search (host-model-driven multi-round survey collection). glm-literature-survey renders 6-20 page PDF surveys with 60+ real citations; glm-research-explorer turns fuzzy directions into concrete topics. The four AMiner skills share one routing ladder and require AMINER_API_KEY; all scripts are pure standard-library with no SDK.",
+        "developerName": "Z.ai",
+        "category": "Research",
+        "capabilities": [
+          "scholar-profile",
+          "paper-deep-dive",
+          "citation-chains",
+          "org-analysis",
+          "venue-monitoring",
+          "patent-analysis",
+          "trigger-parsing",
+          "paper-recommendation",
+          "scholar-profiling",
+          "markdown-output",
+          "multi-round-collection",
+          "query-expansion",
+          "citation-snowballing",
+          "offline-unittests",
+          "paper-triage",
+          "scholar-identification",
+          "entity-normalization",
+          "patent-trend-scan",
+          "literature-survey",
+          "bibliography-building"
+        ],
+        "defaultPrompt": "Use the glm-academic plugin skills: <检索学术文献 / 论文日报 / 综述收集 / 文献综述 PDF / 研究选题>"
+      }
+    }
+  }
+}

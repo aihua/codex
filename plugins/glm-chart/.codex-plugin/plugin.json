@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "glm-chart",
+  "version": "1.0.0",
+  "description": "Data visualization plugin containing the glmcharts skill: professional data charts, structural diagrams and dashboards via matplotlib, ECharts, D3 and Mermaid, with a scene-based routing framework, professional color systems and anti-overlap rules. Trigger for any chart, graph, diagram or dashboard request. Plugin renamed from glmcharts per review decision D6 (skill name unchanged); proven baseline plugin already verified in ChatGPT (Codex).",
+  "author": {
+    "name": "Z.ai",
+    "url": "https://z.ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "charts",
+    "diagrams",
+    "visualization",
+    "matplotlib",
+    "seaborn",
+    "echarts",
+    "d3",
+    "mermaid",
+    "playwright",
+    "flowchart",
+    "mindmap",
+    "dashboard"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GLM Charts",
+        "shortDescription": "Professional charts, diagrams and dashboards via matplotlib, ECharts, D3 and Mermaid with scene-based routing.",
+        "longDescription": "GLM Charts packages the proven glmcharts skill under the unified glm- plugin naming (review decision D6; skill name unchanged). The skill routes any chart request to the right engine — matplotlib/seaborn for data charts, ECharts/D3 for interactive dashboards, Mermaid for flow and sequence diagrams — with a scene-based routing framework, professional color systems, anti-overlap rules and publication-ready output. This is the baseline plugin already verified end-to-end in ChatGPT (Codex).",
+        "developerName": "Z.ai",
+        "category": "Productivity",
+        "capabilities": [
+          "charts",
+          "diagrams",
+          "dashboards",
+          "visualization"
+        ],
+        "defaultPrompt": "Use the glm-chart plugin skill: <画图表 / 画架构图 / 做数据看板>"
+      }
+    }
+  },
+  "skills": "./skills/"
+}

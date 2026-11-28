@@ -1,0 +1,68 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "glm-content",
+  "version": "1.0.0",
+  "description": "Content production plugin bundling four skills: glm-blog-writer (long-form and blog writing with a distinct author voice), glm-seo-content-writer (SEO-oriented writing and search-optimized articles), glm-storyboard-manager (story planning, character development, chapter writing, timeline tracking and consistency checking for fiction projects) and glm-ai-news-collectors (multi-source AI news search with layered ranking). Trigger for blog drafts, SEO articles, novel or screenplay planning and tech-news topic gathering. Zero SDK, zero API keys; outputs land in the user's working directories.",
+  "author": {
+    "name": "Z.ai",
+    "url": "https://z.ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "blog-writing",
+    "writing-style",
+    "notion-publishing",
+    "long-form",
+    "local-first",
+    "seo",
+    "content-writing",
+    "blog-post",
+    "article",
+    "copywriting",
+    "on-page-seo",
+    "featured-snippets",
+    "storyboard-manager",
+    "creative-writing",
+    "character-development",
+    "story-structure",
+    "timeline-tracking",
+    "consistency-checking",
+    "ai-news",
+    "news-aggregation",
+    "heat-ranking",
+    "multi-search"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GLM Content Writing",
+        "shortDescription": "Four writing skills: blog long-form, SEO articles, fiction storyboard management and AI news collection.",
+        "longDescription": "GLM Content Writing bundles the content-production stack. glm-blog-writer drafts long-form posts and articles with a distinct author voice and style profiles; glm-seo-content-writer produces search-optimized content with a deterministic local checklist auditor (seocheck.py) for title length, meta description, H1/H2 keyword placement and FAQ depth; glm-storyboard-manager manages fiction projects (story planning, character development, chapter writing, timeline tracking, consistency checking); glm-ai-news-collectors runs multi-dimensional layered search for AI news and ranks items by heat — its search execution routes to the glm-web plugin's skills. Zero SDK, zero API keys.",
+        "developerName": "Z.ai",
+        "category": "Productivity",
+        "capabilities": [
+          "voice-calibration",
+          "long-form-drafting",
+          "notion-publishing",
+          "examples-library",
+          "seo-content-creation",
+          "on-page-seo-audit",
+          "title-and-meta-optimization",
+          "featured-snippet-formatting",
+          "core-eeat-quality-gates",
+          "character-development",
+          "story-planning",
+          "chapter-writing",
+          "timeline-tracking",
+          "consistency-checking",
+          "multi-dimensional-search",
+          "heat-ranking",
+          "cross-validation",
+          "dedup-merge",
+          "bilingual-digest"
+        ],
+        "defaultPrompt": "Use the glm-content plugin skills: <写博客长文 / 写 SEO 文章 / 小说分镜与一致性 / AI 新闻聚合>"
+      }
+    }
+  }
+}

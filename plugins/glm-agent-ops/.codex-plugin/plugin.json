@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "glm-agent-ops",
+  "version": "1.0.0",
+  "description": "Agent meta-skill plugin bundling two skills: glm-task-review (experience consolidation after high-complexity tasks, saving reusable task paths) and glm-auto-target-tracker (automatic goal progress tracking). Trigger for post-task retrospectives and ongoing goal monitoring. These are self-management skills for the agent itself, analogous to the meta-skill category in the official superpowers plugin.",
+  "author": {
+    "name": "Z.ai",
+    "url": "https://z.ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "task-review",
+    "experience-sedimentation",
+    "skill-authoring",
+    "self-improvement",
+    "post-task-check",
+    "local-first",
+    "goal-tracking",
+    "habit-tracker",
+    "progress-journal",
+    "vision",
+    "ollama",
+    "checkin",
+    "zero-dependency"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GLM Agent Ops",
+        "shortDescription": "Agent self-management: post-task experience sedimentation into reusable skills, plus automatic goal check-in tracking with local vision recognition.",
+        "longDescription": "GLM Agent Ops bundles two meta-skills for locally deployed Codex agents, analogous to the meta-skill category in the official superpowers plugin. glm-task-review runs a silent post-task review after high-complexity tasks and distills the reusable path into a Codex user-level skill (skills sedimented into ~/.codex/skills/ belong to their user). glm-auto-target-tracker recognizes study/fitness/work/creative/habit check-in images through a local vision model, structures them into check-in records and maintains a local goal progress journal (preview first, then --apply to write). Zero vendor gateway credentials, no cloud calls.",
+        "developerName": "Z.ai",
+        "category": "Developer Tools",
+        "capabilities": [
+          "post-task-review",
+          "skill-sedimentation",
+          "skill-updating",
+          "experience-distillation",
+          "goal-tracking",
+          "image-recognition",
+          "check-in-journaling",
+          "progress-summarization"
+        ],
+        "defaultPrompt": "Use the glm-agent-ops plugin skills: <复盘刚才的任务并沉淀经验 / 目标打卡追踪>"
+      }
+    }
+  },
+  "skills": "./skills/"
+}
